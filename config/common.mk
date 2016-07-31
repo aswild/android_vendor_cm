@@ -225,6 +225,14 @@ PRODUCT_PACKAGES += \
     su
 endif
 
+# WILD ADD START
+PRODUCT_PACKAGES += \
+	SuperSU
+
+PRODUCT_COPY_FILES += \
+	vendor/cm/overlay/common/packages/apps/SuperSU/su:system/xbin/su
+# WILD ADD END
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
 
